@@ -1,5 +1,5 @@
 import java.lang.*;
-class demo
+class Demo
 {
 static public void main(String args[]){
 System.out.print("hello world");
@@ -7,7 +7,7 @@ System.out.print("hello world");
 
 }
 
-class demo2
+class Demo2
 {
 static public void main(String args[]){
 System.out.print("hello world2");
