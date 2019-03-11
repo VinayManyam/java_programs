@@ -23,7 +23,7 @@ public class BasicTry {
 			e.printStackTrace();
 		}
 		
-		try(Connection con1=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","Vinayh7541");){
+		try(Connection con1=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","password");){
 			if(con1!=null) {
 				try(Statement st1=con1.createStatement()){
 					if(st1!=null) {
