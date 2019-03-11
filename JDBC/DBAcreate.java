@@ -22,7 +22,7 @@ public class DBAcreate {
 		try {
 
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","Vinayh7541");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","password");
 			st=con.createStatement();
 query="create table student8 (id int,name char(10),city char(10))";
 i=st.executeUpdate(query);
