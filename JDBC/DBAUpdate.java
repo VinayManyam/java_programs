@@ -29,7 +29,7 @@ public class DBAUpdate {
 				Name="'"+Name+"'";
 			}
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","Vinayh7541");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","passowrd");
 			st=con.createStatement();
 			String query="update student set name="+Name+" where id="+Sid;
 			res=st.executeUpdate(query);
