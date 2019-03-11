@@ -16,7 +16,7 @@ public class DBAcodingstands {
 		boolean flag=false;
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","Vinayh7541");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","password");
 			st=con.createStatement();
 			String query="select * from student";
 			rs=st.executeQuery(query);
