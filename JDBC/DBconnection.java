@@ -9,7 +9,7 @@ public static void main(String srg[]) throws Exception {
 		try{  
 			 
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","Vinayh7541");
+			Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","password");
 		
 if (con==null) {
 	System.out.println("failed");
