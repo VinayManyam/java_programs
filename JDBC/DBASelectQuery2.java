@@ -24,7 +24,7 @@ public class DBASelectQuery2 {
 				Sid=sc.next();
 			}
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","Vinayh7541");
+			con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:orcl","system","password");
 			st=con.createStatement();
 			String query="select * from student where id="+Sid;
 			rs=st.executeQuery(query);
